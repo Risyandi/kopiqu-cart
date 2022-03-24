@@ -1,5 +1,5 @@
 # Kopiqu Cart
-a experimental project to create own coffe marketplace, using nodejs and reactjs.
+A experimental project to create own coffe marketplace, using nodejs and reactjs.
 
 # Features in Kopiqu
 1. Add and remove items
@@ -13,7 +13,7 @@ a experimental project to create own coffe marketplace, using nodejs and reactjs
 ```
 2. If the process installing dependency completely, you can run the app, with type this command on your terminal  
 ```bash
-    npm start
+    npm run start
 ```
 3. The apps will be running on `https://localhost:3000`
 
