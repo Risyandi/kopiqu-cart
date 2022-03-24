@@ -74,9 +74,9 @@ class Cart extends Component {
                     <h5>You have ordered:</h5>
                     <ul className="collection">
                         {addedItems}
+                        <Recipe/>
                     </ul>
                 </div>
-                <Recipe/>
             </div>
         )
     }
