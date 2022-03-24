@@ -1,5 +1,5 @@
 import ItemImages from './productImages';
-import {ADD_TO_CART, REMOVE_ITEM, SUB_QUANTITY, ADD_QUANTITY, ADD_SHIPPING} from '../actions/action-types/cart-actions';
+import {ADD_TO_CART, REMOVE_ITEM, SUB_QUANTITY, ADD_QUANTITY, ADD_SHIPPING, SUB_SHIPPING} from '../actions/action-types/cart-actions';
 
 const initState = {
     items: [
@@ -137,7 +137,7 @@ const cartReducer = (state = initState, action) => {
         }
     }
 
-    if (action.type === 'SUB_SHIPPING') {
+    if (action.type === SUB_SHIPPING) {
         return {
             ...state,
             total: state.total - 5
