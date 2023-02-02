@@ -1,6 +1,8 @@
 # Kopiqu Cart
-A experimental project to create own coffe marketplace, using nodejs and reactjs.
+A repository contain project to create your own website coffe marketplace, using reactjs.
 
+![kopiqu marketplace](./docs/kopiqu.gif)  
+(gambar: kopiqu marketplace)
 # Features in Kopiqu
 1. Add and remove items
 2. Edit quantity items
