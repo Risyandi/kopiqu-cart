@@ -3,12 +3,12 @@ import { connect } from 'react-redux';
 import { addToCart } from './actions/cartActions';
 
 class Home extends Component{
-    handleClick = (id)=>{
-        this.props.addToCart(id); 
+    handleClick = (id) => {
+        this.props.addToCart(id);
     }
 
     render(){
-        let itemList = this.props.items.map(item=>{
+        let itemList = this.props.items.map(item => {
             return(
                 <div className="card pink lighten-5 hoverable" key={item.id}>
                         <div className="card-image">
@@ -28,7 +28,7 @@ class Home extends Component{
                         </div>
                  </div>
             )
-        })
+        });
 
         return(
             <div className="container">
@@ -41,15 +41,17 @@ class Home extends Component{
     }
 }
 
-const mapStateToProps = (state)=>{
+const mapStateToProps = (state) => {
     return {
-      items: state.items
+        items: state.items
     }
-  }
+}
 
-const mapDispatchToProps= (dispatch)=>{
-    return{
-        addToCart: (id)=>{dispatch(addToCart(id))}
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addToCart: (id) => {
+            dispatch(addToCart(id))
+        }
     }
 }
 
