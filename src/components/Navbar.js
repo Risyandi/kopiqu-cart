@@ -6,31 +6,22 @@ const Navbar = () => {
     <nav role="navigation">
         <div className="nav-wrapper container">
         <Link to="/" className="brand-logo">Kopiqu</Link>
+        {/* desktop */}
         <ul className="right hide-on-med-and-down">
             <li>
             <Link to="/">Shop</Link>
             </li>
             <li>
-            <Link to="/cart">My cart</Link>
-            </li>
-            <li>
-            <Link to="/cart">
-            <i className="material-icons">shopping_cart</i>
-            </Link>
+            <Link to="/cart">My Cart</Link>
             </li>
         </ul>
-
+        {/* mobile */}
         <ul id="nav-mobile" className="sidenav">
             <li>
             <Link to="/">Shop</Link>
             </li>
             <li>
-            <Link to="/cart">My cart</Link>
-            </li>
-            <li>
-            <Link to="/cart">
-            <i className="material-icons">shopping_cart</i>
-            </Link>
+            <Link to="/cart">My Cart</Link>
             </li>
         </ul>
         <Link to="#" data-target="nav-mobile" className="sidenav-trigger"><i className="material-icons">menu</i></Link>
