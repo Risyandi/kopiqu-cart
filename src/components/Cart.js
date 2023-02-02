@@ -23,7 +23,6 @@ class Cart extends Component {
         let addedItems = this.props.items.length
             ? (this.props.items.map(item => {
                 return (
-
                     <li className="collection-item avatar" key={item.id}>
                         <div className="item-img">
                             <img src={item.img} alt={item.img} className=""/>
@@ -62,7 +61,6 @@ class Cart extends Component {
                         </div>
 
                     </li>
-
                 )
             }))
             : (
